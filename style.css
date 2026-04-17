@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* هاد الكود هو اللي كيعطي اللون */
+body {
+    background: linear-gradient(180deg, #7CD9CE 0%, #2E7588 50%, #061C36 100%) !important;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.weather-main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.weather-header h1 {
+    font-size: 3rem;
+}
+.main-icon i{
+    font-size: 150px;
+   
+}
+.weater-container{
+   display: flex;  
+}
+.weather-container {
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.forecast-list {
+    display: flex;             /* كيجيب الأيام واحد حدا واحد بالعرض */
+    justify-content: center;   /* كيجيبهم ف الوسط */
+    gap: 80px;                 /* كيدير مسافة بين نهار ونهار */
+    list-style: none;
+    text-align: center;
+}
+
+.forecast-item h3 {
+    font-size: 1.2rem;
+    color: #AAB2BA;           /* لون رمادي بحال التصويرة */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.forecast-icon {
+    font-size: 60px;          /* هنا كتحكمي ف كبر الأيقونات */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.temp-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+.divider {
+    width: 70%;               /* الطول ديال الخط */
+    height: 1px;              /* غلظ الخط (رقيق كيبان أنيق) */
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+    margin: 40px auto;        /* كيبعد السطر الأول على السطر الثاني بـ 40px */
+}
+/* خبّي المنيو في الأول */
+.hamburger-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+
+/* فاش ديري Hover على الـ Hamburger كامل، يبان المحتوى */
+.hamburger:hover .hamburger-content {
+    display: flex;
+}
+
+/* ستيل للـ Inputs */
+.hamburger-content input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+
+#submit-btn {
+    background: #2E7588;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
